@@ -1,0 +1,34 @@
+NAME
+	convertisseur - creates html page from a styotyboard file
+ 
+SYNOPSIS
+	
+	convertisseur [OPTION] [FILE]	
+
+DESCRIPTION
+	
+	Creates html pages in the pages folder (by default) aswell as fill them with pages from the pdf file specified in the storyboard FILE and splitted audio tracks on each cor		responding page.
+	
+	-f [FILE]
+		specify the storyboard file to use
+	-h
+		echo the help
+	-s
+		open the generated html pages in firefox
+
+EXAMPLES
+    Some examples of common usage.
+		
+	storyboard -f storyboard.txt
+	convertisseur -f storyboard.txt -t outputFolder
+	convertisseur -f storyboard.txt -s
+
+BUGS
+	mp3 audio slices can't be generated due to an issue with ffmpeg
+
+AUTHOR
+	Written  by Enzo Mourany and Léo Paillé.
+
+COPYRIGHT
+	uhmmm
+
